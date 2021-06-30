@@ -94,17 +94,19 @@
       Make the heading of the page change color every time the user clicks on it.
       */
 
-      const makeItClickable = function () {
-        //
-      };
+     const makeItClickable = function () {
+        document.getElementById("myTitle").style.color = "purple"
+        return
+      }
+      window.addEventListener("click",function() { makeItClickable("purple") })
 
       /* EXERCISE 10
       Change the footer text with something else when the user clicks on it.
       */
 
       const changeFooterText = function () {
-        //
-      };
+        
+      }
 
       /* EXERCISE 11
       Attach an event listener to the input field in the page for console logging its value just after any keystroke.
@@ -133,9 +135,11 @@
     </style>
   </head>
   <body>
-    <header>
-      <h1 id= "myTitle"> This is the title of the page</h1>
+  <header>
+    <button>
+      <h1 id= "myTitle" onclick = "makeItClickable"> This is the title of the page</h1>
       <h2 id= "myHeading"> This is the subtitle of the page</h2>
+    </button>
     </header>
 
     <main>

@@ -105,15 +105,17 @@
       */
 
       const changeFooterText = function () {
-        
+        document.getElementById("myFooter")
+        myFooter.innerHTML = myFooter.innerHTML.replace("And this text is just for the exercise too!", "New Footer")
       }
+      window.addEventListener("click", function() { changeFooterText("New Footer") })
 
       /* EXERCISE 11
       Attach an event listener to the input field in the page for console logging its value just after any keystroke.
       */
 
       const inputField = document.getElementById("input-field");
-      // ...
+    
 
       /* EXERCISE 12
       Create a new welcome alert message when the page successfully loads.
@@ -173,7 +175,9 @@
     </main>
 
     <footer>
-      <p>And this text is just for the exercise too!</p>
+    <button>
+      <p id="myFooter" onclick = "changeFooterText"> And this text is just for the exercise too!</p>
+      </button>
     </footer>
   </body>
 </html>

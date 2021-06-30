@@ -83,7 +83,12 @@
       */
 
       const paintItGreen = function () {
-        
+        let lists = document.getElementsByTagName("ul")
+        for (let i = 0; i < lists.length; i++) {
+          lists[i].style.backgroundColor = "green" 
+          }
+      }
+      window.addEventListener("load", function() { paintItGreen("green") })
 
       /* EXERCISE 9
       Make the heading of the page change color every time the user clicks on it.

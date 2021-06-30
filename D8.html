@@ -60,8 +60,13 @@
       */
 
       const addParagraph = function (content) {
-        //
-      };
+        let list = document.getElementById("myDiv")
+        const newP = document.getElementById("myDiv").value
+        let entry = document.createElement("p")
+        entry.appendChild(document.createTextNode(content))
+        list.appendChild(entry)
+      }
+      window.addEventListener("load", function() { addParagraph("This is my new paragraph") })
 
       /* EXERCISE 7
       Write a function for making the first UL disappear.
@@ -142,9 +147,9 @@
         <li>3rd</li>
       </ul>
 
-      <a id="myLink"> href="strive.school">This link goes to Strive School</a>
+      <a id="myLink" href="strive.school">This link goes to Strive School</a>
 
-      <div>
+      <div id="myDiv">
         <p id="myId"> This text is just for the exercise</p>
       </div>
 
